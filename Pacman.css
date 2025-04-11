@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    background-image : url(pacman.jpg);
+  }
+
+.div1{
+    width: 300px;
+    height: 150px;
+    background: rgb(223, 223, 10);
+    border-radius:150px 150px 0px 0px ;
+    margin-left: -15vh;
+    animation: div1 0.5s alternate infinite;
+}
+
+@keyframes div1 {
+    to{
+        transform: rotate(-30deg);
+    }
+}
+
+.div2{
+    width: 300px;
+    height: 150px;
+    background: rgb(223, 223, 10);
+    border-radius:0 0 150px 150px  ;
+    margin-left: -15vh;
+
+    animation: div2 0.5s alternate infinite;
+
+}
+
+@keyframes div2 {
+    to{
+        transform: rotate(30deg);
+    }
+}
+
+span{
+    font-size: 40px;
+    position: relative;
+    left: 160px;
+    top: 50px;
+}
+section{
+    display: flex;
+}
+section div{
+    font-size: 50px;
+z-index: -1;
+}
+
+.wm{
+    animation: wm 3s infinite  ;
+    
+}
+@keyframes wm {
+    to{
+        transform: translate(-73vw);
+    }
+}
+
+.gra{
+    animation: gra 3s infinite 0.7s;
+}
+@keyframes gra {
+    to{
+        transform: translate(-73vw);
+    }
+}
+
+.kw{
+    animation: kw 3s infinite 1.2s;
+}
+@keyframes kw {
+    to{
+        transform: translate(-73vw);
+    }
+}
+
+.app{
+    animation: app 3s infinite 1.9s;
+}
+@keyframes app {
+    to{
+        transform: translate(-73vw);
+    }
+}
